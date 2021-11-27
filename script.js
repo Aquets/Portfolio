@@ -1,12 +1,3 @@
-var mouseX = 0;
-var mouseY = 0;
-
-$(function() {
-$(document).on('mousemove', function(e){
-       mouseX = e.pageX,
-       mouseY = e.pageY
-    });
-});
 
 $(function() {$('.project').hover( handlerIn, handlerOut )});
 
