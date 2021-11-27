@@ -1,0 +1,120 @@
+
+body{
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  transition: 0.3s;
+}
+
+#presentation{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 100%;
+  font-size: 7vw;
+  color: black;
+  z-index: -2;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+h1{
+  text-transform: uppercase;
+  line-height: 90%;
+  margin: 0px 0px 0px 0px;
+  font-size: 1.5em;
+}
+
+#about{
+  margin: 0px 0px 0px 0px;
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 90%;
+}
+
+#cover {
+  width: 100%;
+  height: 100vh;
+}
+
+#defaultCanvas0{
+  width: 100% !important;
+  border-bottom: 2px solid black;
+}
+
+#projects_list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project{
+  width: 100%;
+  border-top: 2px solid black;
+  padding: 40px 0px 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.project:hover{
+  cursor: pointer;
+  background-color: #d2d2d2;
+}
+
+.project p{
+  margin: 0px 0px 0px 0px;
+  transition: .3s;
+}
+
+.project h3{
+  margin: 0px 0px 10px 0px;
+  transition: .3s;
+}
+
+.project_preview{
+  opacity: 0;
+  max-width: 25vw;
+  position: absolute;
+  border: 2px solid black;
+  transition: .3s;
+  transition-timing-function: ease-in-out;
+}
+
+footer{
+  border-top: 2px solid black;
+  text-align: center;
+  padding: 80px 0 80px 0;
+}
+
+@media screen and (width:765px) {
+
+  h1{ font-size: 70px }
+  h2{ font-size: 70px }
+  h3{ font-size: 50px }
+  p{ font-size: 30px }
+  footer span{ font-size: 50px }
+  #about{ font-size: 70px }
+  #presentation{
+    font-size: 20vw;
+    top: 50%;
+    left: 0;
+    text-align: left;
+    transform: translateY(-50%);
+  }
+  .project{ display: block; text-align: center; padding: 100px 0 100px 0}
+
+}
