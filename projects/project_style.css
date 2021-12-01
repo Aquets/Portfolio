@@ -44,16 +44,22 @@ img{
   mix-blend-mode: difference;
 }
 
+a{
+  color: black;
+}
+
 /*MOBILE AND TABLET*/
 
 @media screen and (max-width:999px) {
 
-  #back{ font-size: 80px; left: 20px;}
+  #back{ font-size: 50px; left: 20px;}
 
   .project_content{ max-width: 100%; }
 
-  .header_container{ margin-top: 120px }
+  .header_container{ margin-top: 70px }
 
   .header_container{ display: block }
+
+  .description{font-size: 21px;}
 
 }

@@ -52,13 +52,11 @@ function draw() {
   clear();
 
   if( screen.width <= 765 ) {
-    size = 60;
-  }else{
-    size = 40;
+    totBalls = 30;
   }
 
   if (balls.length < totBalls) {
-    balls.push(new Ball(random(windowWidth), random(10,30), size))
+    balls.push(new Ball(random(windowWidth), random(10,30), 40))
   }
 
   fill('#f2f2f2');
