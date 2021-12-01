@@ -100,7 +100,7 @@ footer{
   padding: 80px 0 80px 0;
 }
 
-@media screen and (width:999px) {
+@media only screen and (width:999px) {
 
   h1{ font-size: 70px }
   h2{ font-size: 70px }

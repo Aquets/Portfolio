@@ -50,7 +50,7 @@ a{
 
 /*MOBILE AND TABLET*/
 
-@media screen and (max-width:999px) {
+@media only screen and (max-width:999px) {
 
   #back{ font-size: 50px; left: 20px;}
 
