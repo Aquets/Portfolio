@@ -26,7 +26,3 @@ function handlerOut() {
   $('#project_preview_right').css({    opacity: 0
   });
 }
-
-$(document).ready(function() {
-    console.log( "Let's take a look to my code ;)" );
-});

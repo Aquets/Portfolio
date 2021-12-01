@@ -54,7 +54,7 @@ function draw() {
 
   if( screen.width <= 765 ) {
     totBalls = 30;
-    ballSize = screen.width / 17;
+    ballSize = screen.height / 34;
   }
 
   if (balls.length < totBalls) {
@@ -74,14 +74,16 @@ function draw() {
 function windowResized() {
   resizeCanvas(windowWidth,windowHeight);
 
-  Body.setPosition(right, {
-    x: windowWidth + 50,
-    y: right.position.y
-  });
-  Body.setPosition(bottom, {
-    x: bottom.position.x,
-    y: windowHeight + 50
-  });
+  if (screen.width >= 765) {
+    Body.setPosition(right, {
+      x: windowWidth + 50,
+      y: right.position.y
+    });
+    Body.setPosition(bottom, {
+      x: bottom.position.x,
+      y: windowHeight + 50
+    });
+  }
 
 }
 
