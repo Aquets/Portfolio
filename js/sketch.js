@@ -13,6 +13,7 @@ var balls = [];
 var mouse_ball;
 var right;
 var bottom;
+var ballSize = screen.width / 34;
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
@@ -53,10 +54,11 @@ function draw() {
 
   if( screen.width <= 765 ) {
     totBalls = 30;
+    ballSize = screen.width / 17;
   }
 
   if (balls.length < totBalls) {
-    balls.push(new Ball(random(windowWidth), random(10,30), 40))
+    balls.push(new Ball(random(windowWidth), random(10,30), ballSize))
   }
 
   fill('#f2f2f2');
