@@ -73,18 +73,10 @@ function draw() {
 
 function windowResized() {
   resizeCanvas(windowWidth,windowHeight);
-
-  if (screen.width >= 765) {
-    Body.setPosition(right, {
-      x: windowWidth + 50,
-      y: right.position.y
-    });
-    Body.setPosition(bottom, {
-      x: bottom.position.x,
-      y: windowHeight + 50
-    });
-  }
-
+  Body.setPosition(right, {
+    x: windowWidth + 50,
+    y: right.position.y
+  });
 }
 
 class Ball{
