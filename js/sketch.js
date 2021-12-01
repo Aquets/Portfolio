@@ -14,6 +14,7 @@ var mouse_ball;
 var right;
 var bottom;
 var ballSize = screen.width / 34;
+var startingHeight = windowHeight;
 
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
@@ -72,7 +73,7 @@ function draw() {
 
 
 function windowResized() {
-  resizeCanvas(windowWidth,windowHeight);
+  resizeCanvas(windowWidth,startingHeight);
   Body.setPosition(right, {
     x: windowWidth + 50,
     y: right.position.y
