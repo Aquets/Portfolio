@@ -76,11 +76,13 @@ h1{
 }
 
 .project p{
+  text-align: center;
   margin: 0px 0px 0px 0px;
   transition: .3s;
 }
 
 .project h3{
+  text-align: center;
   margin: 0px 0px 10px 0px;
   transition: .3s;
 }
@@ -92,6 +94,7 @@ h1{
   border: 2px solid black;
   transition: .3s;
   transition-timing-function: ease-in-out;
+  background-color: #f2f2f2;
 }
 h2{
   font-size: 2em;

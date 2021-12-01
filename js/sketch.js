@@ -54,7 +54,7 @@ function draw() {
 
   if( screen.width <= 765 ) {
     totBalls = 30;
-    ballSize = screen.height / 34;
+    ballSize = screen.height / 17;
   }
 
   if (balls.length < totBalls) {
