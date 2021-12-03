@@ -14,9 +14,10 @@ var mouse_ball;
 var right;
 var bottom;
 var ballSize = screen.width / 34;
-var startingHeight = windowHeight;
+var startingHeight;
 
 function setup() {
+  startingHeight = windowHeight;
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0);
   canvas.style('z-index', '-1');
@@ -55,7 +56,7 @@ function draw() {
 
   if( screen.width <= 765 ) {
     totBalls = 30;
-    ballSize = screen.height / 17;
+    ballSize = screen.height / 20;
   }
 
   if (balls.length < totBalls) {
@@ -77,6 +78,11 @@ function windowResized() {
   Body.setPosition(right, {
     x: windowWidth + 50,
     y: right.position.y
+  });
+
+  Body.setPosition(bottom, {
+    x: bottom.position.x,
+    y: startingHeight + 50
   });
 }
 
