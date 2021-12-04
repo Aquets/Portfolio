@@ -29,14 +29,14 @@ h1{
   text-transform: uppercase;
   line-height: 90%;
   margin: 0px 0px 0px 0px;
-  font-size: 2em;
+  font-size: 1.7rem;
 }
 
 #about{
   margin: 0px 0px 0px 0px;
   color: black;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.7rem;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 90%;
@@ -95,16 +95,17 @@ h1{
   transition: .3s;
   transition-timing-function: ease-in-out;
   background-color: #f2f2f2;
+  display: none;
 }
 h2{
-  font-size: 2em;
+  font-size: 1.7rem;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 p{
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 footer{
@@ -134,6 +135,7 @@ footer a {
     text-align: center;
   }
   .project{ display: block; text-align: center; padding: 100px 0 100px 0 }
+  .project_preview{ display: block}
 
 }
 
@@ -161,6 +163,7 @@ footer a {
     text-decoration: none;
     transition: .3s;
   }
+  .project_preview{ display: block}
 
 }
 
@@ -188,6 +191,8 @@ footer a {
     text-decoration: none;
     transition: .3s;
   }
+  .project_preview{ display: block}
+
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -214,4 +219,6 @@ footer a {
     text-decoration: none;
     transition: .3s;
   }
+  .project_preview{ display: block}
+
 }
